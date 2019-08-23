@@ -4,6 +4,17 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "Prepare Build Folder",
+            "type": "shell",
+            "command": "xcopy",
+            "args": [
+                "/f",
+                "/y",
+                "${workspaceFolder}/external/glfw/lib/glfw3.dll",
+                "${workspaceFolder}/build/"
+            ],
+        },
+        {
             "label": "Build All With VsCode",
             "type": "shell",
             "command": "${env:mingw}/bin/mingw32-make.exe",
@@ -16,10 +27,13 @@
             "group": "build",
             "presentation": {
                 "reveal": "always",
-                "panel": "new"
+                "panel": "shared"
             },
             "problemMatcher": [
                 "$gcc"
+            ],
+            "dependsOn": [
+                "Prepare Build Folder"
             ]
         },
         {
@@ -36,10 +50,13 @@
             "group": "build",
             "presentation": {
                 "reveal": "always",
-                "panel": "new"
+                "panel": "shared"
             },
             "problemMatcher": [
                 "$gcc"
+            ],
+            "dependsOn": [
+                "Prepare Build Folder"
             ]
         }
     ]
