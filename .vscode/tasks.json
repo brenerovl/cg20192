@@ -10,6 +10,7 @@
             "args": [
                 "-f",
                 "${workspaceFolder}\\makefile",
+                "MGW=${env:mingw}",
                 "all"
             ],
             "group": "build",
@@ -28,6 +29,7 @@
             "args": [
                 "-f",
                 "${workspaceFolder}\\makefile",
+                "MGW=${env:mingw}",
                 "clean",
                 "all"
             ],

@@ -1,7 +1,7 @@
 # Project: cg20192
 
-CPP      = "D:\Dev-Cpp\MinGW64\bin\g++.exe" -D__DEBUG__
-CC       = "D:\Dev-Cpp\MinGW64\bin\g++.exe" -D__DEBUG__
+CPP      = "$(MGW)\bin\g++.exe" -D__DEBUG__
+CC       = "$(MGW)\bin\g++.exe" -D__DEBUG__
 WINDRES  = windres.exe
 OBJ      = build//main.o build//glad.o build//callbacks.o build//renderLoop.o build//globals.o build//shaders.o build//objLoader.o
 LINKOBJ  = build//main.o build//glad.o build//callbacks.o build//renderLoop.o build//globals.o build//shaders.o build//objLoader.o
