@@ -8,6 +8,7 @@ On Windows:
   - Clone de project locally
   
   - Using DevC++:
+   - - Run post_build.bat
    - - Open cg20192.dev with DevC++ and compile
   
   - Using vscode:
