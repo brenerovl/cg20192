@@ -12,11 +12,11 @@ On Windows:
   
   - Using vscode:
   - - Install MinGW
-  - - Add MinGW path to an environment variable named 'mingw' (no quotes)
+  - - Add MinGW path to an environment variable named 'mingw' (no quotes) using forward slashes (/) instead of backwards slashes (\)
   - - Run build task or launch task
   
   - Using vscode with DevC++ installed:
-  - - Add DevCpp/MinGW path to an environment variable named 'mingw' (no quotes)
+  - - Add DevCpp/MinGW path to an environment variable named 'mingw' (no quotes) using forward slashes (/) instead of backwards slashes (\)
   - - Run build task or launch task
 
 
